@@ -6,8 +6,8 @@ python evol_instruct.py \
     --num_threads 50 \
     --api_type azure \
     --evol_engine gpt-35-turbo \
-    --api_base https://baaisolution-ae.openai.azure.com/ \
-    --api_version 2023-03-15-preview \
-    --api_key 2d196d16e1bc470c86689efdc7ca4943 \
+    --api_base  \
+    --api_version  \
+    --api_key  \
 
 
