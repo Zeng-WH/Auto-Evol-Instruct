@@ -1,5 +1,30 @@
 # Auto Evol-Instruct
 
+## Optimize Evolving Method
+
+优化evolving method
+
+需要指定以下脚本的参数完成优化
+
+1. 配置openai的相关参数，包括api_type (azure etc), api_base, api_version以及api_key.  (其他LLM也支持，目前已经测试过Lllam3-70b)
+
+2. 指定用于进化的模型 (evol_engine)，目前已经测试过的模型包括gpt-3.5, gpt-4以及Llama3-70b
+
+3. 指定用于优化的模型 (evol_engine)，目前已经测试过的模型包括gpt-3.5, gpt-4以及Llama3-70b
+
+4. 输入文件，由input_file指定，格式为字典，分别有"question", "answer"两个key
+
+5. 输出文件，由output_file指定，包括优化好的evolving method
+
+6. num_threads表示最大的并发数
+
+7. batch_size表示batch size
+
+8. dev_batch_size表示dev batch size
+
+9. total_step表示优化总步数
+
+10. sample_num表示Multiple Optimizations的次数
 
 ## Evol Instruction
 指令进化代码（给定evolving method的情况下大规模进化Seed Dataset）
